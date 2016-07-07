@@ -9,8 +9,8 @@ A native looks passcode input interface.
 `CVPasscodeController` provide you with a easy way to achieve local authentication, which only requires you make little change in your project.
 
 ## Screencast
-![](https://github.com/unixzii/CVPasscodeController/raw/master/Images/1.gif)
-![](https://github.com/unixzii/CVPasscodeController/raw/master/Images/2.gif)
+![](https://coding.net/u/cyandev/p/GitHubImageDelegate/git/raw/master/cvpasscodecontroller1.gif)
+![](https://coding.net/u/cyandev/p/GitHubImageDelegate/git/raw/master/cvpasscodecontroller2.gif)
 
 ## Features
 * Two interface style (dark / light).
