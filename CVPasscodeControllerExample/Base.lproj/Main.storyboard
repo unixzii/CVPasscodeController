@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F24b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CVPasscodeControllerExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample" translatesAutoresizingMaskIntoConstraints="NO" id="zJg-Ca-4OS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zJg-Ca-4OS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8iD-uS-T2i"/>
+                            <constraint firstItem="zJg-Ca-4OS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O3x-hj-OSY"/>
+                            <constraint firstItem="zJg-Ca-4OS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="igl-fc-Itc"/>
+                            <constraint firstItem="zJg-Ca-4OS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="zEc-Sg-b8n"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SMR-dt-OKK" appends="YES" id="kDR-Jn-GGm"/>
+                            <outletCollection property="gestureRecognizers" destination="CcU-Cb-9y1" appends="YES" id="ZF9-WR-uuC"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="up" id="SMR-dt-OKK">
+                    <connections>
+                        <action selector="viewDidSwipe:" destination="BYZ-38-t0r" id="j5l-aB-USj"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="CcU-Cb-9y1">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="bmO-II-2ox"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="326.5" y="353.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sample" width="375" height="667"/>
+    </resources>
+</document>
